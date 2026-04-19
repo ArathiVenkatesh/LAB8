@@ -17,7 +17,7 @@ class BankAccount {
     void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance = balance - amount;
-            System.out.println("Balance after withdrawal of 100: " + balance);
+            System.out.println("Balance after withdrawal of 300: " + balance);
         } else {
             System.out.println("Insufficient balance or invalid amount");
         }
@@ -32,7 +32,7 @@ public class BankService {
         System.out.println("Initial Balance: " + acc.balance);
 
         acc.deposit(200);
-        acc.withdraw(100);
+        acc.withdraw(300);
 
         System.out.println("Final Balance: " + acc.balance);
     }
