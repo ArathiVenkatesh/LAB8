@@ -8,7 +8,7 @@ class BankAccount {
     void deposit(double amount) {
         if (amount > 0) {
             balance = balance + amount;
-            System.out.println("Balance after deposit of 500: " + balance);
+            System.out.println("Balance after deposit of 200: " + balance);
         } else {
             System.out.println("Invalid deposit amount");
         }
@@ -31,7 +31,7 @@ public class BankService {
 
         System.out.println("Initial Balance: " + acc.balance);
 
-        acc.deposit(500);
+        acc.deposit(200);
         acc.withdraw(100);
 
         System.out.println("Final Balance: " + acc.balance);
